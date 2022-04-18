@@ -14,7 +14,7 @@ function handle(e){
 }
 async function handleSubmit(e){
     e.preventDefault()
-    axios.post("http://localhost:8080/student",{
+    axios.post("http://localhost:8080/students",{
         ...formData
     }).then(function(response){
         console.log(response);
